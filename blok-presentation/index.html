@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Анализ стихотворения А. А. Блока «Предчувствую Тебя…»</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: #1a1530;
+    color: #f5f1e8;
+    overflow: hidden;
+  }
+  .slides { width: 100vw; height: 100vh; position: relative; }
+  .slide {
+    position: absolute; inset: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 80px;
+    background: linear-gradient(135deg, #2a1f4a 0%, #1a1530 60%, #3a1f2e 100%);
+    text-align: center;
+    animation: fade .6s ease;
+    overflow-y: auto;
+  }
+  .slide.active { display: flex; }
+  @keyframes fade { from { opacity: 0; transform: translateY(10px);} to {opacity:1; transform:none;} }
+
+  h1 {
+    font-size: 2.6em;
+    color: #f0d27a;
+    margin-bottom: 30px;
+    font-style: italic;
+    text-shadow: 0 2px 12px rgba(0,0,0,.5);
+  }
+  h2 {
+    font-size: 2em;
+    color: #f0d27a;
+    margin-bottom: 25px;
+    font-style: italic;
+  }
+  h3 { font-size: 1.4em; color: #d9a6c2; margin: 18px 0 10px; }
+
+  p, li { font-size: 1.2em; line-height: 1.55; max-width: 1000px; }
+  ul { text-align: left; max-width: 950px; margin: 0 auto; }
+  li { margin-bottom: 12px; list-style: none; padding-left: 28px; position: relative;}
+  li::before {
+    content: "✦";
+    position: absolute; left: 0; top: 0;
+    color: #f0d27a;
+  }
+
+  blockquote {
+    font-style: italic;
+    font-size: 1.3em;
+    line-height: 1.7;
+    color: #ffe8b0;
+    border-left: 3px solid #f0d27a;
+    padding: 12px 28px;
+    margin: 18px auto;
+    max-width: 800px;
+    text-align: left;
+    background: rgba(0,0,0,.18);
+  }
+
+  .author { font-size: 1.25em; color: #d9a6c2; margin-top: 14px; }
+  .subtitle { font-size: 1.2em; color: #e0d4f5; margin-top: 8px; }
+
+  .nav {
+    position: fixed; bottom: 18px; right: 24px;
+    display: flex; gap: 10px; align-items: center;
+    z-index: 10;
+  }
+  .nav button {
+    background: rgba(240,210,122,.15);
+    border: 1px solid #f0d27a;
+    color: #f0d27a;
+    font-size: 1em;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .nav button:hover { background: rgba(240,210,122,.3); }
+  .counter { color: #f0d27a; font-size: 1em; min-width: 60px; text-align: center; }
+
+  .own-poem-placeholder {
+    font-style: italic;
+    font-size: 1.4em;
+    line-height: 1.85;
+    color: #ffe8b0;
+    margin: 20px auto;
+    max-width: 700px;
+    text-align: center;
+    background: rgba(0,0,0,.2);
+    padding: 40px 50px;
+    border-radius: 12px;
+    border: 2px dashed rgba(240,210,122,.4);
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .placeholder-hint { color: #b8acd1; opacity: .7; font-size: .85em;}
+  .small { font-size: .95em; color: #b8acd1; margin-top: 16px; }
+
+  .hint { position: fixed; top: 14px; left: 20px; color: #b8acd1; font-size: .85em; opacity: .6;}
+</style>
+</head>
+<body>
+
+<div class="hint">← → или пробел для переключения слайдов</div>
+
+<div class="slides">
+
+  <!-- Слайд 1: Титульный -->
+  <section class="slide active">
+    <h1>«Предчувствую Тебя.<br>Года проходят мимо…»</h1>
+    <p class="author">А. А. Блок</p>
+    <p class="subtitle">Цикл «Стихи о Прекрасной Даме» (1901–1902)</p>
+    <p class="small">Анализ стихотворения</p>
+  </section>
+
+  <!-- Слайд 2: Текст стихотворения -->
+  <section class="slide">
+    <h2>Текст стихотворения</h2>
+    <blockquote>
+      Предчувствую Тебя. Года проходят мимо —<br>
+      Всё в облике одном предчувствую Тебя.<br><br>
+      Весь горизонт в огне — и ясен нестерпимо,<br>
+      И молча жду, — тоскуя и любя.<br><br>
+      Весь горизонт в огне, и близко появленье,<br>
+      Но страшно мне: изменишь облик Ты,<br>
+      И дерзкое возбудишь подозренье,<br>
+      Сменив в конце привычные черты.<br><br>
+      О, как паду — и горестно, и низко,<br>
+      Не одолев смертельныя мечты!<br>
+      Как ясен горизонт! И лучезарность близко.<br>
+      Но страшно мне: изменишь облик Ты.
+    </blockquote>
+    <p class="small">1901</p>
+  </section>
+
+  <!-- Слайд 3: Введение / идея -->
+  <section class="slide">
+    <h2>Идея произведения</h2>
+    <p>Стихотворение — поэтический манифест раннего Блока, ключ ко всему циклу «Стихи о Прекрасной Даме».</p>
+    <br>
+    <p><b>Главная идея:</b> мистическое предчувствие встречи с Вечной Женственностью — божественным идеалом, носительницей Красоты и Гармонии — соединяется со страхом её земного воплощения, в котором небесный облик может исказиться.</p>
+    <br>
+    <p>Любовь у Блока — не земное чувство, а <b>религиозное служение</b>; лирический герой — рыцарь, монах, ждущий Откровения. Возлюбленная превращается в Идеал, в Святую.</p>
+  </section>
+
+  <!-- Слайд 4: Аргумент 1 -->
+  <section class="slide">
+    <h2>Аргумент 1. Образ Прекрасной Дамы — мистический символ</h2>
+    <ul>
+      <li>Местоимения «Тебя», «Ты» написаны с <b>заглавной буквы</b> — как обращение к Богу. Это не земная женщина, а воплощение Души Мира — идея философа Вл. Соловьёва.</li>
+      <li>Строка <i>«Всё в облике одном предчувствую Тебя»</i> — герой видит Её во всём, что окружает: образ растворён в мире.</li>
+      <li><b>Приёмы:</b> сакральная заглавная буква, повторы-заклинания, недоговорённость, символика.</li>
+    </ul>
+    <blockquote>«Предчувствую Тебя. Года проходят мимо — / Всё в облике одном предчувствую Тебя».</blockquote>
+  </section>
+
+  <!-- Слайд 5: Аргумент 2 -->
+  <section class="slide">
+    <h2>Аргумент 2. Двоемирие: ожидание и страх</h2>
+    <ul>
+      <li>Лирический герой одновременно жаждет встречи и боится её: <i>«молча жду, — тоскуя и любя»</i> — оксюморонное соединение чувств.</li>
+      <li>Страх рождён предчувствием искажения идеала на земле: <i>«страшно мне: изменишь облик Ты»</i>.</li>
+      <li><b>Приёмы:</b> антитеза («ясен» — «страшно», «лучезарность» — «паду низко»), оксюморон, повтор-рефрен, нагнетающий тревогу.</li>
+    </ul>
+    <blockquote>«И молча жду, — тоскуя и любя… / Но страшно мне: изменишь облик Ты».</blockquote>
+  </section>
+
+  <!-- Слайд 6: Аргумент 3 -->
+  <section class="slide">
+    <h2>Аргумент 3. Космический пейзаж как образ Откровения</h2>
+    <ul>
+      <li>Пейзаж не реалистический, а символический: <i>«Весь горизонт в огне»</i> — образ зари, апокалиптического света, грядущего явления Вечной Женственности.</li>
+      <li>Эпитет <i>«ясен нестерпимо»</i> — оксюморон: свет настолько силён, что человек не выдерживает Откровения.</li>
+      <li><b>Приёмы:</b> цветопись (огонь, лучезарность), символ зари, анафора <i>«Весь горизонт в огне»</i>, церковнославянизм <i>«смертельныя»</i> — придаёт молитвенную интонацию.</li>
+    </ul>
+    <blockquote>«Весь горизонт в огне — и ясен нестерпимо… / Как ясен горизонт! И лучезарность близко».</blockquote>
+  </section>
+
+  <!-- Слайд 7: Заключение -->
+  <section class="slide">
+    <h2>Заключение</h2>
+    <p>Стихотворение «Предчувствую Тебя…» — квинтэссенция мировоззрения молодого Блока: мир — храм, любовь — служение, земная встреча — лишь отблеск вечного.</p>
+    <br>
+    <p>Через символику зари, сакральные местоимения, антитезу ожидания и страха поэт передаёт <b>напряжённое предчувствие чуда</b> — и трагическую неизбежность его земного искажения.</p>
+    <br>
+    <p>Идеи Блока живы и сегодня: каждый, кто по-настоящему любит, превращает любимого человека в свой идеал, ждёт его как чуда — и боится потерять.</p>
+  </section>
+
+  <!-- Слайд 8: Собственное стихотворение (плейсхолдер) -->
+  <section class="slide">
+    <h2>Стихотворение собственного сочинения</h2>
+    <p class="subtitle">В традициях цикла «Стихи о Прекрасной Даме»</p>
+    <div class="own-poem-placeholder">
+      <span class="placeholder-hint">[ Здесь будет ваше стихотворение,<br>посвящённое возлюбленной,<br>написанное в духе А. А. Блока ]</span>
+    </div>
+  </section>
+
+</div>
+
+<div class="nav">
+  <button onclick="prev()">◀</button>
+  <span class="counter" id="counter">1 / 8</span>
+  <button onclick="next()">▶</button>
+</div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let i = 0;
+  function show(n){
+    slides[i].classList.remove('active');
+    i = (n + slides.length) % slides.length;
+    slides[i].classList.add('active');
+    document.getElementById('counter').textContent = (i+1) + ' / ' + slides.length;
+  }
+  function next(){ show(i+1); }
+  function prev(){ show(i-1); }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') next();
+    if (e.key === 'ArrowLeft' || e.key === 'PageUp') prev();
+  });
+</script>
+</body>
+</html>
